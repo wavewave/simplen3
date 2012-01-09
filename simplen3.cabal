@@ -1,7 +1,7 @@
 Name:		simplen3
 Version:	0.0
-Synopsis:	
-Description: 	
+Synopsis:	simple implementation of N3
+Description: 	simple implementation of N3 
 License: 	BSD3
 License-file:	LICENSE
 Author:		Ian-Woo Kim
@@ -26,8 +26,10 @@ Library
   ghc-prof-options: -caf-all -auto-all
   Build-Depends: 
                    base>4, mtl>2, directory, filepath,
+                   uuid == 1.2.*,
                    cmdargs
   Exposed-Modules: 
+                   Data.SimpleN3.Type
                    Data.SimpleN3.ProgType
                    Data.SimpleN3.Job
                    Data.SimpleN3.Command
